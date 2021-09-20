@@ -50,6 +50,14 @@ AUnrealScriptBasicCharacter::AUnrealScriptBasicCharacter()
 void AUnrealScriptBasicCharacter::Jump()
 {
 	Super::Jump();
+	UE_LOG(LogTemp, Warning, TEXT("Player is jumping!!"));
+
+
+	HowManyJumps++;
+	FString JumpsText = FString::Printf(TEXT("The player has jumped %d times..."), HowManyJumps);
+
+	UE_LOG(LogTemp, Warning, TEXT("%s"), *JumpsText);
+
 }
 
 //////////////////////////////////////////////////////////////////////////

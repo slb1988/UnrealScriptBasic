@@ -31,6 +31,8 @@ public:
 
 	virtual void Jump() override;
 
+	int HowManyJumps;
+
 protected:
 
 	/** Resets HMD orientation in VR. */
