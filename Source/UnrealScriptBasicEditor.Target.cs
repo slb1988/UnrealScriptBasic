@@ -5,10 +5,10 @@ using System.Collections.Generic;
 
 public class UnrealScriptBasicEditorTarget : TargetRules
 {
-	public UnrealScriptBasicEditorTarget( TargetInfo Target) : base(Target)
+	public UnrealScriptBasicEditorTarget(TargetInfo Target) : base(Target)
 	{
 		Type = TargetType.Editor;
 		DefaultBuildSettings = BuildSettingsVersion.V2;
-		ExtraModuleNames.AddRange( new string[] { "UnrealScriptBasic" } );
+		ExtraModuleNames.Add("UnrealScriptBasic");
 	}
 }

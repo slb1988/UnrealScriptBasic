@@ -5,10 +5,10 @@ using System.Collections.Generic;
 
 public class UnrealScriptBasicTarget : TargetRules
 {
-	public UnrealScriptBasicTarget( TargetInfo Target) : base(Target)
+	public UnrealScriptBasicTarget(TargetInfo Target) : base(Target)
 	{
 		Type = TargetType.Game;
 		DefaultBuildSettings = BuildSettingsVersion.V2;
-		ExtraModuleNames.AddRange( new string[] { "UnrealScriptBasic" } );
+		ExtraModuleNames.Add("UnrealScriptBasic");
 	}
 }
