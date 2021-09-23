@@ -27,7 +27,12 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
+	UFUNCTION(BlueprintPure, Category="Spawning")
+	FVector GetRandomPointInVolume();
+
 private:
 	UPROPERTY(VisibleAnyWhere, BlueprintReadOnly, Category="Spawning", meta=(AllowPrivateAccess="true"))
 	class UBoxComponent* SpawningVolume;
+
+	void SpawnPill();
 };
